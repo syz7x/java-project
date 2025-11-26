@@ -1,0 +1,33 @@
+# ===============
+# 1. 编译产物 (C++ 的 .exe, .obj)
+# ===============
+target/
+*.class
+
+# ===============
+# 2. IDE 配置文件 (C++ 的 .sln, .vcxproj)
+#    这些是你本地编辑器的设置，别人不需要
+# ===============
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# ===============
+# 3. 运行时日志与临时文件 (Runtime Logs)
+#    Nginx 和 Java 跑起来产生的垃圾
+# ===============
+*.log
+*.pid
+logs/
+temp/
+
+# 专门针对你的 Nginx 路径做双重保险
+Environment/**/logs/
+Environment/**/temp/
+
+# ===============
+# 4. 系统垃圾
+# ===============
+.DS_Store
+Thumbs.db
