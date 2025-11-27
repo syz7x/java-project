@@ -14,7 +14,7 @@
     <update id="update" parameterType="Employee">
         update employee
         <set>
-            <if test = "name != null"> naem = #{name},</if>
+            <if test = "name != null"> name = #{name},</if>
             <if test = "sex != null"> sex = #{sex},</if>
             <if test = "phone != null"> phone = #{phone},</if>
             <if test = "idNumber != null"> id_number = #{idNumber},</if>
